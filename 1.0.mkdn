@@ -1,0 +1,97 @@
+
+WeebProjekt s
+
+
+====================
+     10-14-2021
+====================
+
+
+   * hardware/qcom-caf/msm8998/display
+e06d350a display: fix compile issues with terminating loops
+23eb2be2 Revert "hwc: Set ioprio for vsync thread"
+
+   * packages/apps/Settings
+7912f7d720 Add package name to installed app details
+0f01a2a060 Remove the "About phone" avatar.
+cadebe9f28 Settings: Add three-fingers-swipe to screenshot [2/2]
+
+====================
+     10-13-2021
+====================
+
+
+   * build/make
+cf5155a69 build: product: Remove these useless packages from building
+
+   * build/soong
+065003723 soong: Allow arm-linux-androidkernel-{as,ld}
+
+   * frameworks/base
+22e303c029a9 base: Add three-fingers-swipe to screenshot [1/2]
+b1bed82155ba overlays: Build 2-button navigation bar overlay
+907384639147 Shorten wait time for shutdown time optimization
+f87bcb79d553 CarrierConfigManager: enable LTE+ icon by default
+7631d5065f4c Download: Add support to manually pause/resume download
+3761590e5703 Keyguard: don't use large clock on landscape
+c62c2a78209f Revert "Keyguard: Never switch to large clock"
+4d744c10eb5e SystemUI: Skip screen-on animation in all scenarios
+f0aca4a1bc5e aapt2: silence positional arguments warnings
+6a47669abb9c FATAL EXCEPTION IN SYSTEM PROCESS: android.ui
+dea48723d6f6 SystemUI: Disable heads up debugging on user builds
+9075f4e0eb01 Skip screen on animation when wake and unlock via biometrics
+3ff039c69a7c Enable Binder Proxy Tracking by Uid only on eng builds
+31128bc1f379 Suppress FingerprintManager logspam
+2faa3a689ee0 KernelCpuUidTimeReader: Decrease log level on non-eng builds
+1a5c50088391 Add missing STORAGE_INTERNAL permission for BackupRestoreConfirmation
+42f1cbd437dd Add missing INTERACT_ACROSS_USERS_FULL permission
+6be9186c2c08 Add "android.permission.READ_PHONE_STATE" to manifest
+9888c1509701 Keyguard: Adjust clock style
+b5b77ca347c7 Keyguard: Hide padlock
+9a98e425aa09 Revert "Switch long-press power behavior in AOSP."
+
+   * packages/apps/Settings
+f599e348e1 DevelopmentSettings: Disable automatic updates
+6a61f4e8c7 Remove feedback and bug report stuff
+c2e23b0225 smart_battery_detail: GGWP typo google java.lang.RuntimeException: Unable to start activity ComponentInfo{com.android.settings/com.android.settings.SubSettings}: android.view.InflateException: Binary XML file line #25: Error inflating class (not found)com.android.settingslib.widget.IllustrationPreferencee
+
+   * system/core
+c1ee2d27c5 Add exfat utilities for mkfs and fsck
+
+   * system/vold
+7e35d2a Utils: Add missing exfat
+3b1c263 vold: add support for more filesystems for public storage
+
+   * vendor/weeb
+1922116 weeb: overlay: Update Rounded corner dimens from Pixel Beta 5
+101a776 Disable extra StrictMode features on all non-engineering builds
+2888570 Weeb_product: Build messaging,ThemePicker and Jelly
+
+====================
+     10-12-2021
+====================
+
+
+   * frameworks/base
+3149141c2111 UI: Reconfigure power menu items
+5f3ab1bd989a Keyguard: Never switch to large clock
+3a8bcbdfc972 base: Delete media tests
+0b4628234a4e Kill off provider info logspam
+d57fe583eec1 Reduce log verbosity: Don't spam logcat
+a0c2801a6ff8 base: Remove unnecessary videos
+657fa3da74ee fwb: SystemUI: Remove GarbageMonitor tile
+
+   * packages/apps/Launcher3
+f4fbac125 Specify the component name to start the picker
+e83ffc5ec Specify the wallpaper picker package
+32b0f7e8d Launcher3: exclude from recents
+
+   * packages/apps/SettingsIntelligence
+12d1024 SettingsIntelligence: Match Settings style
+
+   * packages/apps/ThemePicker
+3df9049 Specify we read and write launcher settings
+3f512a9 Add wallpaper default permissions
+15be3ca Override legacy WallpaperPicker app
+135e45d Add wallpaper privapp whitelist
+
