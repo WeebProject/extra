@@ -1,0 +1,126 @@
+
+Weeb Project S
+
+
+====================
+     10-18-2021
+====================
+
+
+   * build/make
+fd56b751c core: sysprop: Only show build id
+
+   * device/qcom/sepolicy-legacy-um
+26991008 sepolicy-legacy-um: Strip neverallow violations
+f109b75f sepolicy-legacy-um: Address some neverallows
+2170c41c sepolicy-legacy-um: Update drm service executables file_contexts
+26dbb74b Add contexts for exported telephony props
+b665fc5c Rename exported3_radio_prop to radio_control_prop
+3c7fe816 legacy: add app_data_file_type to imshelper_app_data_file
+146032bf legacy: drop recovery's perm to set ffs_config_prop
+54d035bc legacy: turn exported2_default_prop into build_prop
+b33de044 using SYSTEM_EXT_<PUBLIC/PRIVATE>_SEPOLICY_DIRS variable
+54a38162 sepolicy-legacy-um: Bringup for weeb
+
+   * packages/apps/Settings
+5ab2da2f52 firmwareversion: Hide Mainline module version
+723d29d936  Settings: FimwareVersion: Add SELinux info
+1bcae382c2 Settings: Add Weeb build version to About Phone - As well add rom navigation uri link to it Change-Id: I5c1c25e5a5c0545e29cd11db936334effbed9ec5 Signed-off-by: faham1997 <nafidfaham08@gmail.com>
+
+   * system/sepolicy
+c2426cb78 sepolicy: Allow Settings > Device info to load selinux status
+
+   * vendor/weeb
+00b5dd69e weeb: versioning: Add custom weeb version
+6464483da weeb: config: Move enforce rro flag to overlay makefile
+465b279ab weeb: config: Create separate submodule for gapps
+
+====================
+     10-17-2021
+====================
+
+
+   * frameworks/av
+950889a9e8 audiopolicy: make audio policy extensible
+169c8e7680 audiopolicy: support extended feature in audiopolicymanager
+
+   * packages/apps/Launcher3
+aefcd281e WeebLauncherGo: Add Go specific default workspace
+12900632b WeebLauncher: Add 2x2 workspace grid option
+98f0eea8b WeebLauncher: Add 5x6, 5x7 and 6x6 default workspaces
+79bbbebdf Replace 4x4 grid option with a 4x5 one
+7527fd368 WeebLauncher: Update default workspace
+
+   * packages/apps/Settings
+ea83cedf18 Settings: disable all bugreport settings
+4c5bb274fe Remove app uninstall and disable confirmation dialogs
+6778dbcc8d Remove storage manager activation warning
+21df7ed61f Remove roaming warning dialog
+1ede9ca033 Unlock mobile network settings when airplane mode is on
+429afbdbaa Launch APN settings on main activity stack
+bd52daac9e Launch mobile network settings on main activity stack
+cefbe7d172 Settings: Whitelist WRITE_DEVICE_CONFIG permission
+
+   * vendor/weeb
+7c1e2301e build: Set ro.apex.updatable=false in product properties
+cfe6d7c6d build: Flatten APEXs for performance
+6866511f2 weeb_product: Don't build Jelly
+
+====================
+     10-16-2021
+====================
+
+
+   * packages/providers/DownloadProvider
+0c15a6be DownloadProvider: Add support for manual pause/resume
+1a0cf101 DownloadProvider: Display download speed in notification
+
+   * vendor/weeb
+ff4157596 overlay: SystemUI: Enable combined signal icons in status bar
+2f56743f0 overlay: SystemUI: Enable production-ready feature flags
+996c506d1 apn: Fix FreedomPop UK
+9c3ec0237 apn: Update giffgaff APN
+00cbbe90b apns: Update Vodafone NL
+cfb638852 apns: Add IPV4V6 to EE (UK)
+1ea010ddd apns: Add AT&T 310-280 ids
+9e3afd966 apns-conf: Add TPG Singapore configs
+7d3a884d4 vendor: apns: Add LIDL Connect
+86499121c apns: Remove T-Mobile UK
+
+====================
+     10-15-2021
+====================
+
+
+   * build/make
+49d7e8c6f build_image: Allow disabling custom inode count calculation
+515ddd548 Regenerate the hashtree for prebuilt vendor.img and odm.img files.
+0983efa8e releasetools: do not remove dynamic partitions in system-only builds
+4aa665a07 Don't make recovery patch for devices with prebuilt vendor
+7954046e7 soong: add TARGET_SPECIFIC_HEADER_PATH
+360073cd6 Move recovery-from-boot.p from /system to /vendor
+ee27ce1fb ota: Disable downgrade check
+cc0264aae releasetools: ota_from_target_files: add FullOTA_PostValidate
+
+   * external/tinycompress
+9762474 tinycompress: Use generated kernel headers
+
+   * frameworks/base
+35bb251df3a4 SystemUI: Allow privileged system apps to access screenshot service
+
+   * packages/apps/Launcher3
+9554d03ca Launcher3: Allow changing feature flags on user builds
+918b5d864 Revert "Modifying screenshot button visibility"
+1d0902503 Launcher3: Enable new keyguard-to-launcher animation
+29bd07baf Launcher3: Enable crossfade when changing theme
+5e5228113 Launcher3: Enable new app open/close animations
+e593e3732 Launcher3: Properly expose GridOptionsProvider
+a59c45e23 Launcher3: Globally disable debug logging
+
+   * packages/apps/Settings
+33d0ddab87 BasebandVersionPreferenceController: Trim baseband if needed
+
+   * vendor/weeb
+263b09cb3 weeb: overlay: Allow toggling camera and microphone
+ee6e38f19 overlay: config: Handle power button the oldway
+
