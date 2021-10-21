@@ -1,0 +1,106 @@
+
+Weeb Project S
+
+
+====================
+     10-21-2021
+====================
+
+
+   * build/make
+c02b696c0 core: sysprop: Use 'release-keys' for build tag
+b71264777 core: sysprop: Use 'test-keys' only on eng build type
+c20fbb7cf build: Prefer using "user" buildtype prop for userdebug aswell
+ab817ec84 Check for vintf compatiblity early in generation process
+
+   * frameworks/base
+c1d0321e5dcd fw/b: Use ro.build.date to signal OTA upgrades
+717711dc445a PixelPropUtils: Switch to redfin props instead
+992c5e69248f PixelPropsUtils: Set userdebug as Build.TYPE for GMS
+b38cadaeb000 keystore: Block key attestation for SafetyNet
+185c14afcdcc PixelPropsUtils: Rewrite logic
+f7d016fe2fd6 PixelPropsUtils: Use Pixel 6 props
+2ae5561d840a Introduce PixelPropsUtils
+1d90b2d75e85 webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well
+c6f59e9d8b30 PowerProfile: allow overriding default power profile
+bde2a65685be Shell: Don't show bugreport on DocumentsUI
+
+   * packages/apps/Launcher3 // WIP (host)
+2edde9c35 Improve search bar UI in All Apps
+d176150a4 Fix Personal/Work profile tab colors in All Apps
+1e3b441c2 Fix all apps header color in dark mode
+f8dfadd8a Add ripple animation to task menu items
+891e27d18 Enable local colors for popup menu items
+ace7ee0d7 WeebLauncherGo: Add Go specific default workspace
+0fadbaa8e WeebLauncher: Add 2x2 workspace grid option
+75aa10c45 WeebLauncher: Add 5x6, 5x7 and 6x6 default workspaces
+87899b266 Replace 4x4 grid option with a 4x5 one
+642955b66 WeebLauncher: Update default workspace
+35681f5e6 Launcher3: Allow changing feature flags on user builds
+0a35360ce Revert "Modifying screenshot button visibility"
+db8edf106 Launcher3: Enable new keyguard-to-launcher animation
+61c74b42c Launcher3: Enable crossfade when changing theme
+89246beac Launcher3: Enable new app open/close animations
+edd4ad2e7 Launcher3: Properly expose GridOptionsProvider
+1a0499a56 Specify the component name to start the picker
+
+   * packages/apps/Settings
+1b47cbc92a Use Build.DATE for search index check
+f087c9b567 WiFi: Remove country code checking.
+1c53c6f933 Remove the Automatic ota check option but be sure it's disabled
+69854eeb24 Settings: Hide unsupported USB modes automatically
+7cfa050a36 Comment out Legal/Regulatory info
+
+   * packages/apps/ThemePicker
+b955d67 Add permission for launcher preview rendering
+81e6086 Declare HOME query for launcher discovery
+
+   * packages/apps/WallpaperPicker2
+d30cff8 WallpaperPicker2: Don't publish placeholder categories
+
+   * system/core
+7fb2a59aea healthd: Add DASH charger type
+44f5e38247 healthd: Add support for HVDCP_3P5 chargers
+8a160bcdbb healthd: Reinitialize mChargerNames for every battery update
+9a493dfeb0 healthd: Add support for HVDCP_3 chargers
+6a328b7384 init: Set properties to make SafetyNet pass
+
+   * vendor/weeb
+47c6e7f2a weeb: versioning: Bump to v1.0.2
+
+====================
+     10-20-2021
+====================
+
+
+====================
+     10-19-2021
+====================
+
+
+   * frameworks/base
+bda16a99eb15 SystemUI: Fix QS status font weight mismatch in dark mode
+1d7c38d11751 SystemUI: Fix uneven volume icon padding in status bar
+7055e48b3578 SystemUI: Remove Android build number from QS footer
+
+   * packages/apps/Settings
+12e5c634e4 firmwareversion: Hide Mainline module version
+c35730bf97  Settings: FimwareVersion: Add SELinux info
+b8be5f853a Settings: Add Weeb build version to About Phone - As well add rom navigation uri link to it Change-Id: I5c1c25e5a5c0545e29cd11db936334effbed9ec5 Signed-off-by: faham1997 <nafidfaham08@gmail.com>
+867d9c8ce7 Settings: disable all bugreport settings
+a871c13efc Remove app uninstall and disable confirmation dialogs
+f8ceeeb315 Remove storage manager activation warning
+e8c349ad39 Remove roaming warning dialog
+666ba4b671 Unlock mobile network settings when airplane mode is on
+
+   * vendor/weeb
+40ec6e7da weeb: config: gapps: Inherit weebUI config if exists
+6cb032c89 weeb: versioning: Bump to v1.0.1-BETA
+4f434c1ca weeb: weeb_product: Build QuickAccessWallet
+e5b6f355a overlay: SystemUI: Offload WM shell to another thread
+eb886bf8c SystemUI: Whitelist QuickAccessWallet plugin
+49a74a44b overlay: Move max cached processes setting to core config
+20d79032a overlay: SettingsProvider: Enable one-handed mode gesture by default
+9a5a90c13 Update example backup-transport resource overlay
+35dd7c216 vendor: overlay: set default backup transport
+
