@@ -1,0 +1,98 @@
+
+Weeb Project S
+
+
+====================
+     10-26-2021
+====================
+
+
+   * frameworks/base
+954f244c96f3 SettingsProvider: Commonize toggle for double tap to wake/sleep
+2ffc7b0a5a78 Double tap to sleep on statusbar [1/2]
+de1f37eac6a5 Double tap to sleep on lockscreen [1/2]
+2f21db35f633 WeebUtils:Add some static weeb utilities
+
+   * packages/apps/Launcher3
+460ff30f4 Improve search bar UI in All Apps
+eb5480b83 Fix all apps header color in dark mode
+1fc135ca8 Add ripple animation to task menu items
+efe745491 Enable local colors for popup menu items
+4e606b479 WeebLauncher: Add 2x2 workspace grid option
+5e0cae381 Revert "Modifying screenshot button visibility"
+bdd30547d Launcher3: Enable new keyguard-to-launcher animation
+478d7f238 Launcher3: Enable crossfade when changing theme
+ab5e0e76d Launcher3: Enable new app open/close animations
+326704363 Launcher3: Properly expose GridOptionsProvider
+946b874a0 Launcher3: Globally disable debug logging
+81c8b09a6 Specify the component name to start the picker
+
+   * packages/apps/Settings
+1c37cc604e Commonize toggle for double tap to wake/sleep
+9789f774d2 Double tap to sleep on lockscreen [2/2]
+42c6f139b3 Double tap to sleep on statusbar [2/2]
+
+   * vendor/weeb
+c8f5796f6 weeb: Bump to v1.0.3
+
+====================
+     10-25-2021
+====================
+
+
+   * frameworks/av
+12e3bef1f9 [2/2] av: Remove restrictions for system audio record
+
+   * frameworks/base
+43ff75174192 Revert "Use exact brightnesses values for comparison."
+688443c00f93 frameworks: Add unlinked ringtone and notification volumes
+6946ffc9645d Support for device specific key handlers
+5a61ab884ea6 Add WEEB metrics const.
+838ce7201eb7 Correction in logic of roundend size calculation of SD card
+78f91fa05aa5 NightLight: Allow lower temperatures
+a998b8d499be [1/2] base: Remove restrictions for system audio record
+36838588f723 MountService: Prevent NPE with DropBoxManager
+aeb912e94e2e Improve scrolling cache
+08245f51f87d display: Make Night Light transition more gradual
+2827f8381ad0 Show USB icon in notification instead of generic system icon
+0e9a0e30c865 SystemUI: Speed up actions expansion animation
+b58679db122e SystemUI: Reduce screenshot dismiss delay to 2 seconds
+90717d6b57d4 SettingsLib: use Cloudflare DNS servers as hints
+22fd2b1e8e54 use Cloudflare DNS as the default fallback
+
+   * frameworks/native
+b1898d9 sf: Avoiding unnecessary frame skip to reduce jank.
+
+   * packages/apps/Settings
+6927faf0c3 Settings: Add switch for linked ring and media notification volumes
+d247190d74 Settings: Build our support preferences library
+ff241fa713 Fix inconsistent USB preference screen title
+9d0d9b0135 Settings: Check if we have any color modes declared in overlay
+3fee80ff15 Settings: IS_DEBUGGABLE -> IS_ENG
+fcd9ff128b disable legacy suggestions
+
+   * vendor/weeb
+d578d4c5b weeb: Use Google Sans for the lockscreen clock * Add and overlay the font to be Google Sans.
+
+====================
+     10-24-2021
+====================
+
+
+   * frameworks/base
+1af6eb92814c SystemUI: Reduce scrim color animation duration to 375 ms
+73efff69b7bc SystemUI: Add dual-tone light and dark themes for QS
+aaa9cbccbc93 SystemUI: Initialize QS tiles in inactive state
+754d983bb69e SystemUI: Remove nav bar background in QS customizer
+f0322d739893 SystemUI: Follow light/dark theme in quick settings
+94fd8588080e Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE"
+38b2d230f5b1 Revert "Make QS always use dark theme colors"
+
+   * packages/apps/WallpaperPicker2
+63303df WallpaperPicker2: Don't publish placeholder categories
+
+====================
+     10-23-2021
+====================
+
+
