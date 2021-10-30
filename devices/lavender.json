@@ -1,0 +1,13 @@
+{
+  "response": [
+    {
+        "maintainer": "Nafid Faham",
+        "oem": "xiaomi",
+        "device": "Redmi Note 7",
+        "codename": "lavender",
+        "buildtype": "Beta",
+        "github": "https://github.com/faham1997",
+        "telegram": "https://t.me/letsmakecakes"
+    }
+  ]
+}
