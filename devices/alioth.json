@@ -1,0 +1,13 @@
+{
+  "response": [
+    {
+        "maintainer": "Reza Bagas Rifaldy",
+        "oem": "Xiaomi",
+        "device": "Poco F3",
+        "codename": "alioth",
+        "buildtype": "Beta",
+        "github": "https://github.com/GrettoRosella",
+        "telegram": "https://t.me/GrettoRosella"
+    }
+  ]
+}
