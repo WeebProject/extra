@@ -1,0 +1,79 @@
+
+Weeb Project S
+
+
+====================
+     11-09-2021
+====================
+
+
+====================
+     11-08-2021
+====================
+
+
+   * frameworks/base
+9dd1b545f7a1 PixelPropsUtils: Update Props from Pixel 6 Pro November FP
+84aee97e71ae SystemUI: Use DT2W setting also to wake from AOD
+8a5307a788f2 base: Enable DT2S on lockscreen based on DT2W
+6dd7e04f4ba0 frameworks: Fix null pointer Issue
+b9f7ca6293cd base: Add rounded corners to activity open/close animation
+288f836805cb Disable cursor drag by default for editable TextViews
+9c96c3d094aa Turn off some debugs
+d405f19b9074 Fix NPE with void android.view.VelocityTracker.clear()
+d4b8d93524f6 Calm down attention service logspam
+766d77cb3ca6 SystemUI: fix MediaProjection cast crash
+175b543145cd PackageInfo: Optimize ApplicationInfo creation
+1459dd517b7e LayoutInflater: Opportunistically create views directly for performance
+6f6a2512879f SystemServiceRegistry: Replace ArrayMap with HashMap for performance
+42b35456287e InsetsStateController: Replace ArrayMap with HashMap for performance
+8413d5c3f140 LocalServices: Replace ArrayMap with HashMap for performance
+7fc040e0760b ThemedResourceCache: Replace ArrayMap with HashMap for performance
+
+   * packages/apps/Settings
+94fbb1f872 Settings: Use DT2W toggle for lockscreen DT2S
+3bd804fb5b Settings: Bring in missing lottie animations
+
+====================
+     11-07-2021
+====================
+
+
+   * build/make
+5f09e5469 Merge tag 'android-12.0.0_r13' of https://android.googlesource.com/platform/build into HEAD
+
+   * frameworks/av
+4623b14a82 Merge tag 'android-12.0.0_r13' of https://android.googlesource.com/platform//frameworks/av into sushi
+
+   * frameworks/base
+f0e532c91d45 Merge tag 'android-12.0.0_r13' of https://android.googlesource.com/platform//frameworks/base into sushi
+
+   * packages/apps/Launcher3
+b654a247e Merge tag 'android-12.0.0_r13' of https://android.googlesource.com/platform//packages/apps/Launcher3 into HEAD
+
+   * packages/apps/Settings
+997f003512 Merge tag 'android-12.0.0_r13' of https://android.googlesource.com/platform//packages/apps/Settings into HEAD
+
+   * vendor/weeb
+5d2fcb7  weeb: versioning: Bump to version 1.0.5
+
+====================
+     11-06-2021
+====================
+
+
+====================
+     11-05-2021
+====================
+
+
+====================
+     11-04-2021
+====================
+
+
+====================
+     11-03-2021
+====================
+
+
