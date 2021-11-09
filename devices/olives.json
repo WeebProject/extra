@@ -1,0 +1,13 @@
+{
+  "response": [
+    {
+        "maintainer": "ChuckDXD",
+        "oem": "Xiaomi",
+        "device": "Redmi 8/8A/8A Dual",
+        "codename": "olives",
+        "buildtype": "Beta",
+        "github": "https://github.com/Chuck439",
+        "telegram": "https://t.me/ChuckDXD"
+    }
+  ]
+}
