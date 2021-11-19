@@ -1,0 +1,81 @@
+
+Weeb Project S 1.0.6
+
+
+====================
+     11-19-2021
+====================
+
+
+====================
+     11-18-2021
+====================
+
+
+====================
+     11-17-2021
+====================
+
+
+====================
+     11-16-2021
+====================
+
+
+   * frameworks/base
+05f1e32a2bd4 SystemUI: Don't forcefully show lock icon background
+2776bf407f37 Revert "NotificationShade should animate away on MODE_UNLOCK_COLLAPSING"
+
+   * hardware/qcom-caf/wlan
+e46c907 wifi-hal: Use generated kernel headers
+
+   * packages/apps/SettingsIntelligence
+44ac7c2 SettingsIntelligence: Regen database on build version change
+f7b0c3c Style search bar to match new Settings UI
+
+   * vendor/qcom/opensource/data-ipa-cfg-mgr
+945b56d hal: Use log/log.h instead of cutils/log.h
+705fd2a ipacm: Address ipacm start failure
+8074abe data-ipa-cfg-mgr: Remove verbose cflag
+9602d1c data-ipa-cfg-mgr: Don't build ipacm tests on debug builds
+ff77fa4 data-ipa-cfg-mgr: Use generated kernel headers
+
+   * vendor/qcom/opensource/dataservices
+fa4fc27 dataservices: Define soong namespace
+b0a9e9d rmnetctl: Move soong config to vendor/weeb
+aed7fd8 librmnetctl: Add flag for netmgrd without uplink features support
+acc4ea5 librmnetctl: Use generated kernel headers
+e905dbf dataservices: Don't pollute the tree
+
+   * vendor/qcom/opensource/interfaces
+7e0109f Add reversed perf HAL interfaces
+0891328 interfaces: Introduce vendor.qti.hardware.btconfigstore@2.0 HAL
+e9f89f9 interfaces: Introduce vendor.qti.hardware.capabilityconfigstore@1.0 HAL
+52b4cde interfaces: Introduce qcom bluetooth_audio and btconfigstore HALs
+ed453f1 Introduce vendor.qti.hardware.cryptfshw@1.0 HAL
+c9ba607 Add Script to generate vendor hal make files
+
+   * vendor/qcom/opensource/usb
+6b30506 init.qcom.usb.rc: Don't apply persist.vendor.usb.config
+fb9db37 usb: Add USB Soong namespace to product makefile.
+5673e42 Add soong namespace for init scripts
+
+   * vendor/qcom/opensource/vibrator
+1bca6ef vibrator: Use versioned aidl vibrator
+f207fb0 aidl: Simplify soc check and drop prop dep
+
+====================
+     11-15-2021
+====================
+
+
+====================
+     11-14-2021
+====================
+
+
+====================
+     11-13-2021
+====================
+
+
