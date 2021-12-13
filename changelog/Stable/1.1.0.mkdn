@@ -1,0 +1,268 @@
+
+Weeb Project Sushi v1.1.0
+
+
+====================
+     12-13-2021
+====================
+
+
+   * frameworks/base
+1dd1b59a716f frameworks: Reset battery stats [1/2]
+948cef8f07eb incall vibration options [1/3]
+3cb6fea3aaa3 RingtoneManager: Set an default ringtone for the SIM 2
+afdfb9a86d4f base: Phone ringtone setting for Multi SIM device [1/3]
+e41ad8cccec5 Fix bug Device that can't support adoptable storage cannot read the sdcard.
+2efd58758e69 Permissions: Grant Mediascanner access permissions to external storage
+3757d279c149 Fix the case where restricted mode allowed reasons are ignored
+0c45cca2897a Fix an issue in NPMS blockedReasons computation logic.
+5a2c03e9c5b9 keyguard: Do not trigger a wake up when hiding lockscreen
+7dee8864e7fd Fallback to global actions if assistant is not available
+77db27fc2198 Screenshot: Append app name to filename
+469f2de20d37 SystemUI: Adapt screenshot sound to ringer modes
+b413cf40e131 Statusbar: show vibration icon in collapsed statusbar
+462861e362dd base: PixelPropsUtils: Whitelist GoogleCamera
+9c3be5bac810 base: PixelPropsUtils: Switch to Build.VERSION.INCREMENTAL instead of DATE
+0b9c1501ac5f base: PixelPropsUtils: Add chrome into extra packages list
+f4374cfcea2d PowerManager: Add proximity check on wake
+61733376ec55 PixelPropsUtils: Update Props from Pixel 5 December FP
+f775c8e5938a SmoothSpinners: Makes the loading "spinner" animation smoother
+7939bd786696 Status bar notification: Use Material icons for missed calls
+48f2130c5eca SystemUI: Allow user to add/remove QS with one click
+f5d7626331eb SystemUI: Use AVCProfileMain for screen recorder
+ff661e0b28e2 SettingLib: Allow adjusting screen density to smaller sizes
+1aede5c01437 SettingsProvider: use READ_DEVICE_CONFIG permission
+98a6e1c101f7 SettingsProvider: Resolve package name that requires permission
+fd8917fffe9e SystemUI: Use DT2W setting also to wake from AOD
+d4d2f369ad85 SystemUI: Allow overlaying max notification icons
+2ebd64f461c6 SystemUI: Update Bluetooth battery level assets.
+cd04b2955d6f SystemUI: Show bluetooth battery level when available
+1c3c2d5df145 SettingsLib: Update LTE+ icon as per new Silk design
+4dd230c8f7c6 base: Global Actions with Advanced Reboot [1/2]
+f70db12e84ae base: Double tap to sleep on statusbar [1/2]
+8bf5eddc7e79 base: Double tap to sleep on lockscreen [1/2]
+2d1701f22a4e WeebUtils:Add some static weeb utilities
+c9341db81554 frameworks: Add unlinked ringtone and notification volumes
+2c06458fa35b Support for device specific key handlers
+2a0ce4ef327c Add WEEB metrics const.
+c30aebfd14ea SettingsLib: use Cloudflare DNS servers as hints
+48b06de00e01 use Cloudflare DNS as the default fallback
+667334bb680a PixelPropUtils: Switch to redfin props instead
+b3a5dda07393 PixelPropsUtils: Set userdebug as Build.TYPE for GMS
+2f40b8601430 keystore: Block key attestation for SafetyNet
+5e39a9e444b3 PixelPropsUtils: Rewrite logic
+7e956e11b12c PixelPropsUtils: Use Pixel 6 props
+d1a9a49e2855 Introduce PixelPropsUtils
+cef3207eed31 webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well
+40e37298d63f base: Add three-fingers-swipe to screenshot [1/2]
+ed764c907b82 SystemUI: theme: Expose theme engine parameters as settings
+0b0c0ffa46d5 graphics: Blend ARGB colors using Oklab
+c317438aeab1 WallpaperColors: Use CIELAB for light/dark wallpaper detection
+f56c73f51a33 ColorStateList: Switch to ZCAM for lightness modulation
+921bd15413d6 graphics: Add ZCAM implementation with sRGB interface
+8a2fc870dea8 SystemUI: Fix QS status font weight mismatch in dark mode
+e5271afae523 Paint: Enable subpixel text positioning by default
+529592335e80 SystemUI: Remove nav bar background in QS customizer
+16a8a66c3748 SystemUI: theme: Override modulated dark QS background color
+139fb30e6aee SystemUI: Add dual-tone light and dark themes for QS
+778944f7e62a SystemUI: Initialize QS tiles in inactive state
+e928ba246682 SystemUI: Follow light/dark theme in quick settings
+ed1ae78b2340 Revert "Do not re-inflate QS and SB when CONFIG_UI_MODE"
+4fb4a98b8bf6 Revert "Make QS always use dark theme colors"
+233be2736f01 fonts: Use variable font for Roboto Regular
+a34ba6e15a94 SystemUI: Always refresh power menu on UI mode change
+230764973c6a SystemUI: Reduce scrim color animation duration to 375 ms
+e725cccb4806 enable secondary user logout support by default
+7c26148c23c3 stop auto-granting location to system browsers
+dddd13092569 SystemUI: Fix uneven volume icon padding in status bar
+326b7370ed5a SystemUI: theme: Log generated colors
+485fcee4ef21 SystemUI: Use colorkt-based dynamic theme engine for Monet
+0c919e84aa55 display: Make Night Light transition more gradual
+7ab0fa4a07e8 SystemUI: Import TensorFlow Lite model for back gesture
+16509115865f SystemUI: Add machine learning back gesture provider
+2b00ef2351aa Trace: Disable debug tracing on production builds
+9b2a4c0846df SystemUI: Skip screen-on animation in all scenarios
+3d72c685aff2 Show USB icon in notification instead of generic system icon
+90e161cb3f56 Allow disabling USB notifications
+6c4377e23a93 Allow disabling important developer notifications
+ddeda1da9282 Deprioritize important developer notifications
+cb96fdbbddd7 SystemUI: Speed up actions expansion animation
+5b25527cb202 SystemUI: Reduce screenshot dismiss delay to 2 seconds
+3190d4e9923c SystemUI: Always disable rotation on lockscreen
+df8c8465c3d3 [1/2] base: Remove restrictions for system audio record
+09d96aeb53a7 fw/b: Use ro.build.version.incremental to signal OTA upgrades
+5a0870b66c9d Camera: Skip stream size check for whitelisted apps..
+19462b8bf744 camera: Allow selected camera apps to skip unconfigure
+07752e2f83fd Camera: Replace packageblacklist with packageexcludelist
+0b7430ea9652 camera: Support exposing aux camera to apps
+829ca36b5bed Camera: Add feature extensions
+3949a3e40c70 PowerProfile: allow overriding default power profile
+aec65dbf9c42 SettingsLib: Don't show system overlays on apps list
+6a25cffe6173 PackageManager: allow build-time disabling of components
+d56e7258f669 Shell: Don't show bugreport on DocumentsUI
+4f08dc632f13 SystemUI: Remove build version from qs footer
+412fc2b0ac55 SystemUI: Remove GarbageMonitor tile
+9bcae229c54d PackageManager: Add configuration to specify vendor platform signatures
+672e868be3ca SystemUI: Allow overlaying max notification icons
+ab989494ce48 SystemUI: Only add GarbageMonitor tile to default tiles on ENG builds
+dba69613410e bootanimation: Always use normal bootanimation
+7bf49092bb2b core: Expose method to start assistant through Binder
+e64beaf6b7e0 SystemUI: Allow privileged system apps to access screenshot service
+871e8b4bcf28 Allow adjusting progress on touch events.
+e14fa161c673 overlays: Build 2-button navigation bar overlay
+93503aa6cd9b Shorten wait time for shutdown time optimization
+e90c3fcf849e CarrierConfigManager: enable LTE+ icon by default
+1bd1044ba21c Download: Add support to manually pause/resume download
+cc4591bc36a2 Keyguard: don't use large clock on landscape
+a09720b1f20d frameworks: Fix null pointer Issue
+60d41e62446a base: Add rounded corners to activity open/close animation
+5e78b13a41aa Disable cursor drag by default for editable TextViews
+b450511e19f9 Fix NPE with void android.view.VelocityTracker.clear()
+f3605732a280 Calm down attention service logspam
+0ef724824137 SystemUI: fix MediaProjection cast crash
+3ca0121990ba PackageInfo: Optimize ApplicationInfo creation
+8d14cf560a5f LayoutInflater: Opportunistically create views directly for performance
+9761786654c2 SystemServiceRegistry: Replace ArrayMap with HashMap for performance
+b04ec05e001e InsetsStateController: Replace ArrayMap with HashMap for performance
+5ebe7e79fe5b LocalServices: Replace ArrayMap with HashMap for performance
+2b5d92af6ba1 ThemedResourceCache: Replace ArrayMap with HashMap for performance
+e171707d63ac Add missing STORAGE_INTERNAL permission for BackupRestoreConfirmation
+e06ecb02210e Add missing INTERACT_ACROSS_USERS_FULL permission
+fe43d0cd9ad1 Add "android.permission.READ_PHONE_STATE" to manifest
+7355fd225edf aapt: Default to 0 compression ratio
+d41d0d7b9e72 KernelCpuUidTimeReader: Decrease log level on non-eng builds
+ab3f7ac5ad19 Suppress FingerprintManager logspam
+54244d4c65a3 NightLight: Allow lower temperatures
+7de0ad04f6fd Enable Binder Proxy Tracking by Uid only on eng builds
+3ca832ddc50b Skip screen on animation when wake and unlock via biometrics
+db41e33dfce3 Correction in logic of roundend size calculation of SD card
+aa33eee22821 storage: Set all sdcards to visible
+1b8adfb5a030 Turn off some debugs
+
+   * packages/apps/Launcher3
+7f238f69e Launcher3: Import more themed icons
+b9f4bb654 Launcher3 Add support for themed icons
+5efbda42b Launcher3: Use custom LocalColorExtractor implementation
+d3252aac5 Launcher3: Add uninstall button to system shortcuts
+46d9c2a57 Launcher3: Double tap on home screen to turn off screen
+16a3b4fa8 Allow changing feature flags on user builds
+b26a8acd0 Improve search bar UI in All Apps
+a3c56b9da Fix Personal/Work profile tab colors in All Apps
+5b22badad Fix all apps header color in dark mode
+7318998f5 Add ripple animation to task menu items
+83ac39262 Enable local colors for popup menu items
+cd4c82351 Implement LocalColorExtractor using colorkt-based theme engine
+9606043e2 Launcher3: Add smartspace widget to 2x2 and 3x3 grids
+b8a977076 Add Smartspace Widget.
+85b672e6b Launcher3: Reduce app label text size
+31a84fd4a Launcher3: Add 2x2 workspace grid option
+c361df338 Launcher3: Add Settings to center of default 5x5 dock
+672a66772 Expose themed icon setting in ThemePicker
+4927dba21 Launcher3: Enable new keyguard-to-launcher animation
+9610d0b14 Launcher3: Enable crossfade when changing theme
+8b071e5af Revert "Modifying screenshot button visibility"
+bb8125039 Launcher3: Specify the component name to start the picker
+c8c0f6b3d Launcher3: Specify the wallpaper picker package
+3730dccdd Launcher3: Properly expose GridOptionsProvider
+e33f539e1 Launcher3: Globally disable debug logging
+524159b1b WeebLauncher: google feed integration
+28ce38eda Create Weeb Launcher
+8de54cd90 disable hard-wired QuickSearchBox widget
+
+   * packages/apps/Settings
+1d52dcf615 Settings: Reset battery stats [2/2]
+70aba16b0e incall vibration options [3/3]
+6bc7b35c3d Settings: Phone ringtone setting for Multi SIM device [2/3]
+b17682f565 Settings: global actions prefs [2/2]
+dec7903058 Double tap to sleep on lockscreen [2/2]
+4fb8666a22 Double tap to sleep on statusbar [2/2]
+8df4f3d03e Settings: Add three-fingers-swipe to screenshot [2/2]
+dcd5020253 Settings: Add switch for linked ring and media notification volumes
+6d8ea00740 Remove app uninstall and disable confirmation dialogs
+421e9ceb41 Fix inconsistent USB preference screen title
+a8da74d754 Remove storage manager activation warning
+666a0938ee Remove roaming warning dialog
+f063249703 Unlock mobile network settings when airplane mode is on
+b3bd80143e Launch APN settings on main activity stack
+a842ffbe54 Launch mobile network settings on main activity stack
+b6b4df46ae Expose feature flag UI on all builds
+2284269a8a Settings: Build our support preferences library
+e8bd6545fe Add package name to installed app details
+f5868e0b7d Settings: Don't show module version if isn't a date
+ad0d896359 Settings: Comment out Legal/Regulatory category
+7d059965d2  Settings: FimwareVersion: Add SELinux info
+079193680c Settings: Add Weeb build version to About Phone - As well add rom navigation uri link to it Change-Id: I5c1c25e5a5c0545e29cd11db936334effbed9ec5 Signed-off-by: faham1997 <nafidfaham08@gmail.com>
+26bf62b875 Remove the "About phone" avatar.
+3c86fbe739 Add back arrow to Desktop backup password
+3d12f1867b QS dev tiles: Don't set them to active area
+f30ca040f4 Settings: Check if we have any color modes declared in overlay
+360b252065 WiFi: Remove country code checking.
+397ca2c298 Remove feedback and bug report stuff
+65dc33f52d Remove the Automatic ota check option but be sure it's disabled
+b853a162e1 Comment out Legal/Regulatory info
+de1a72410d Settings: Hide unsupported USB modes automatically
+b8e928375e BasebandVersionPreferenceController: Trim baseband if needed
+
+   * packages/services/Telecomm
+cd660375b Incall vibration options [2/3]
+dfe699cbe Telecomm: Phone ringtone setting for Multi SIM device [3/3]
+d5c752aac CallLog: Get rid of warning
+
+   * vendor/weeb
+d1ba85f weeb: interfaces: Remove lineage powershare * we don't need it
+35bd3b4 weeb: Overlay : Bring back SystemUI overlays
+
+====================
+     12-12-2021
+====================
+
+
+====================
+     12-11-2021
+====================
+
+
+   * build/make
+f740fec10 Merge tag 'android-12.0.0_r16' of https://android.googlesource.com/platform/build into HEAD
+
+   * build/soong
+00ea4809a Merge tag 'android-12.0.0_r16' of https://android.googlesource.com/platform/build/soong into HEAD
+
+   * frameworks/av
+cdd0d80e8e Merge tag 'android-12.0.0_r16' of https://android.googlesource.com/platform//frameworks/av into HEAD
+
+   * frameworks/base
+fba4416640d5 MountService: Prevent NPE with DropBoxManager
+ffc91a78fbc0 FATAL EXCEPTION IN SYSTEM PROCESS: android.ui
+c67d4c47c9c9 Improve scrolling cache
+5a61132f5457 aapt2: silence positional arguments warnings
+a125e59b118b base: Delete media tests
+8c4d26d6a595 Kill off provider info logspam
+24f323754a72 Reduce log verbosity: Don't spam logcat
+8570558a62f4 base: Remove unnecessary videos
+
+   * frameworks/native
+a86cf9c4cb Merge tag 'android-12.0.0_r16' of https://android.googlesource.com/platform/frameworks/native into HEAD
+
+   * packages/apps/ThemePicker
+d3a2c78 Merge tag 'android-12.0.0_r16' of https://android.googlesource.com/platform/packages/apps/ThemePicker into HEAD
+
+   * packages/apps/WallpaperPicker2
+cdfe02b Merge tag 'android-12.0.0_r16' of https://android.googlesource.com/platform/packages/apps/WallpaperPicker2 into HEAD
+
+   * packages/providers/DownloadProvider
+29eb4e6c Merge tag 'android-12.0.0_r16' of https://android.googlesource.com/platform/packages/providers/DownloadProvider into HEAD
+
+   * system/core
+e3a395f2f Merge tag 'android-12.0.0_r16' of https://android.googlesource.com/platform/system/core into HEAD
+
+   * system/sepolicy
+3cb25dc84 Merge tag 'android-12.0.0_r16' of https://android.googlesource.com/platform/system/sepolicy into HEAD
+
+   * system/vold
+84f05b6 Merge tag 'android-12.0.0_r16' of https://android.googlesource.com/platform/system/vold into HEAD
+
+   * vendor/weeb
+41b7e2d weeb: Kang font family overlays
+f57f8a5 weeb: Upgrade to 1.1.0
+
