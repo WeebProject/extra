@@ -1,0 +1,130 @@
+
+Weeb Project S
+
+
+====================
+     01-15-2022
+====================
+
+
+   * art
+ff009ae8c0 art: Disable debug tracing on production builds
+8944e30a6e optimization of gc load, reduce gc in some scenarios
+9a21132289 Reland "Trigger fewer GCs during startup""
+
+   * bionic
+a60b7104c Switch to jemalloc memory allocator
+cf27684f3 on 64-bit, zero the leading stack canary byte
+daae133c9 replace brk and sbrk with stubs
+b281dfaad bionic: Support wildcards in cached hosts file
+16ea74dcd bionic: Sort and cache hosts file data for fast lookup
+64af63224 replace VLA formatting with dprintf-like function
+8b3f054a6 fix undefined out-of-bounds accesses in sched.h
+
+   * external/jemalloc_new
+33cc93a8 Merge tag 'android-12.0.0_r13' of https://android.googlesource.com/platform/external/jemalloc_new into HEAD
+326fd734 Update Soong blueprint for jemalloc 5.2.1
+a681f485 Update Android extension functions for jemalloc 5.2.1
+47d9425b Regenerate configs for 5.2.1 update
+c5c0fcc0 Fix typo in tcache stats check
+
+   * frameworks/base
+8ef26737ff70 Fixed a crash in settings in tts engine selection screen.
+83812d470830 SystemUI: Redraw display cutout on overlay changes
+4c92c500193b Fingerprints: Increase MAX_FAILED_ATTEMPTS
+37dc958a7d6b CutoutUtils: Improve logic
+c46b08bd3dce base: Declare cutout utils
+9884cb9f3c24 PixelPropsUtils: Update fingerprint of Pixels to January release
+05d9a07d38af MediaDataManager: use safe cast to avoid NPE
+
+   * packages/apps/Settings
+60b88e7022 Remove misleading "Google Play system update" info field
+e51a00a388 enable gesture settings
+6349fe3b29 Settings: Allow sorting Applications by size
+28da21ad06 Settings: One does not simply become a Developer
+469eb8d1e9 Settings: make AppPackageName copyable
+81b5841211 Settings: Add drawable for Private DNS
+0c046e3882 Settings: Fix invalid private DNS help text if URI is missing
+689b470533 Settings: Add missing illustration for camera gesture
+a2ca77081d Notification log improvements
+4ca52eec85 Expose the notification log
+
+   * vendor/weeb
+60d82e32 Changed protocol from IPV6 to IP for Telus
+8e1ff4a8 vendor: apns: Add auth_type explanation
+c3682e12 vendor: apns: Fix wrong IPV4 protocols
+656ff3ab vendor: apns: Remove unused "spn" attribute
+22268fe1 vendor: apns: Correct Telia
+
+====================
+     01-14-2022
+====================
+
+
+====================
+     01-13-2022
+====================
+
+
+   * frameworks/native
+12039cfeb8 libbinder: Suppress log spam when unlinking death recipients
+
+   * packages/apps/Launcher3
+df139fb71 Launcher3: Update vector icons to their optimized version
+38314194f Launcher3: Fix all apps view not dismissing
+186856a2f Launcher3: Use YouTube icons for Vanced
+df69a37bc Launcher3: Update SoundCloud Icon
+628ca78b4 Launcher3: Convert all themed icons png to vector
+2e756f740 Workspace: Allow resizing any widget
+1768f3968 Launcher3: Fix NPE for QuickStep hotseat prediction controller
+c8a97c9e1 Launcher3: AppsSearchContainerLayout: Avoid NPE
+e6d3477d9 Fix header protection height calculation
+6b6464d17 Revert "Don't allow starting DeveloperOptionsFragment on non-debug builds"
+4ee44206c Match Pixel Launcher string for Google page
+
+   * packages/apps/Settings
+ab4afa9364 AmbientDisplay: Add custom pref for devices with custom doze packages
+b384fc1a5f Settings: Whitelist WRITE_DEVICE_CONFIG permission
+a2c93ed19e Settings: Protect sensitive info on About device
+3879454169 Ignore custom app space management activities
+
+   * packages/resources/devicesettings
+50690aa devicesettings: Add ambient enable missing string
+
+
+====================
+     01-12-2022
+====================
+
+
+   * frameworks/base
+5ea8893a2f0b Use tmpArgBuffer correctly when argBuffer is null
+6e4e74d4f5db Include saved battery history chunks into BatteryUsageStats parcel
+4da9266cf3f3 Fix concurrency issue with BatteryUsageStats
+f056a6946031 PixelPropsUtils: Spoof Pixel XL for Google Photos
+53f2cacb7ed4 Core: Extend Pixel experience Blacklist For Google Photos
+4f7aa0e2d467 Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/frameworks/base into HEAD
+
+   * vendor/weeb
+2864ad49 weeb: versioning: Bump to v1.2
+
+====================
+     01-11-2022
+====================
+
+
+   * build/make
+e4b99cc29 Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/build into sushi
+
+   * frameworks/av
+65e9d28735 Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform//frameworks/av into sushi
+
+   * frameworks/native
+37315350ef Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/frameworks/native into sushi
+
+   * packages/apps/Settings
+bd6c6cc8b1 Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/packages/apps/Settings into sushi
+
+   * packages/services/Telecomm
+7a235c271 Merge tag 'android-12.0.0_r26' of https://android.googlesource.com/platform/packages/services/Telecomm into sushi
+
